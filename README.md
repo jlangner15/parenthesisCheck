@@ -23,3 +23,12 @@ Flowchart Diagram:
 
 ## Three Flaskateers:
 This is our first hackathon individually and as a group!  The three of us have different education backgrounds and come from different countries. The three of us have similar tech experience however but none of us have used Flask. 
+
+
+## Setting Up The Database Connection
+1. Open up terminal in working directory with virtual environment
+2. run  `python`
+3. run `from app import database`
+4. run `database.create_all()`
+5. Database has been establisted
+6. run `exit()`
