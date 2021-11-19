@@ -17,7 +17,8 @@ The algorithm utilizes a stack data structure. This is a data structure that fol
 Our web application is built utilizing the Flask web framework. The homepage will contain two options to pass different input types, either as a file of supported kind(See below) or as a string. Each option will direct you to another page where the process will take place. Upon completion, you will be redirected to the home page and prompted to repeat the process.
 
 Flowchart Diagram:
-![flowDiagram1](https://user-images.githubusercontent.com/69116925/142677822-eb302304-5316-4a17-a992-64d16b443468.JPG)
+
+![flowDiagram](https://user-images.githubusercontent.com/69116925/142677966-73f80633-da5e-411a-8007-4d5a59e0a1c1.png)
 
 
 ## Three Flaskateers:
