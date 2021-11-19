@@ -12,6 +12,9 @@ def hello_world():
 def string():
     return render_template('string.html')
 
+@app.route('/file/')
+def file():
+    return render_template('file.html')
 
 if __name__ == '__main__':
     app.run()
