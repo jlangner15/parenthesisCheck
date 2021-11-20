@@ -18,6 +18,7 @@ a unique ID to identify such string.
 class inputString(database.Model):
     id = database.Column(database.Integer, primary_key=True)
     content = database.Column(database.String(1000), nullable=False) #max string length is 1000 chars
+    isBalanced = database.Column(database.String(50), nullable=False) #outcome of brackets_validator(str)
 
     def __repr__(self):
         return 'string %s' % self.id
@@ -34,8 +35,15 @@ def string():
     if request.method == 'POST':
 
         string = request.form['content'] #get string from html form labeled as content in .html
+        outcome = brackets_validator(str(string)) #check brackets_validator for outcome on string
 
-        new_str = inputString(content=string) #creates new database item instance, assigning the column 'content' to the string passed
+        boolResult = ""
+        if outcome == -1:
+            boolResult = "True"
+        else:
+            boolResult = "False! Error at index: " + str(outcome)
+
+        new_str = inputString(content=string,isBalanced=boolResult) #creates new database item instance, assigning the column 'content' to the string passed and boolResult to 'isBalanced'
 
         #try to add new database item instance to database
         try:

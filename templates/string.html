@@ -19,20 +19,13 @@
     </form>
     <br>
 
-    <table >
-        <tr>
-            <th>String</th>
-            <th>Balanced</th>
-        <tr>
-
-    <!-- Python code must follow syntax below and contain a endblock seen below-->
-         {% for string in string %}
-            <tr>
-                <td>{{ string.content }}</td>
-                <td>result from bracketsValidator.py</td>
-            </tr>
-        {% endfor %}
-    </table>
+    {% for string in string %}
+        <a>String:</a>
+        <a>{{ string.content }}</a>
+        <br>
+        <Outcome>Balanced:</Outcome>
+        <a>{{ string.isBalanced }}</a>
+    {% endfor %}
 
 </body>
 

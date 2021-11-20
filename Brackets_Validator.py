@@ -7,7 +7,7 @@ def brackets_validator(str):
 
     position = 0
     for ch in str:
-        position = position + 1
+        position += 1
         if (ch == '(' or ch == '[' or ch == '{'):
             temp = Brackets(ch, position)
             opening_bracket_stack.push(temp)
@@ -27,6 +27,8 @@ def brackets_validator(str):
                 opening_bracket_stack.pop()
 
     if (opening_bracket_stack.empty() and flag):
-        print("Success")
+        #print("Success")
+        return -1
     else :
-        print(opening_bracket_stack.top().posi)
+        #print(opening_bracket_stack.top().posi)
+        return opening_bracket_stack.top().posi
