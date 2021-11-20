@@ -2,6 +2,12 @@
 
 <br>
 
+A Parenthesis Validator App is a must have app while working with programming languages, we never really know if the
+file have all the Parenthesis Balanced or not, only way is we can just pass those files or strings through our Web
+App, and sit back and relax, it will do the job for you.
+
+<br>
+
 ## **Back to Hacking 2021 run by Major League Hacking**
 
 <br>
@@ -27,7 +33,9 @@ November 19-21, 2021
 Balanced parenthesis is a common programming problem that checks whether or not all open parenthesis have a closing parenthesis and are properly nested.
 [GeeksforGeeks Balanced Parenthesis](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
 
-### **Algorithm**
+<br>
+
+## **Algorithm**
 
 <br>
 
@@ -164,7 +172,7 @@ Flowchart Diagram:
 
 <br>
 
-This is our first hackathon individually and as a group!  The three of us have different education backgrounds and come from different countries. The three of us have similar tech experience however but none of us have used Flask. 
+This is our first hackathon individually and as a group!  The three of us have different education backgrounds and come from different countries. The three of us have similar tech experience however but none of us have used Flask.
 
 <br>
 
