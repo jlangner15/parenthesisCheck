@@ -54,8 +54,9 @@ First call :
 Stack : |'[', 1| pushed '[' into the stack
 
 Second call :
-Stack : |Empty| whenever we encounter any closing brace, we check if the top of the stack contains the matching
-opening brace or not, if this is the case then instead of pushing, we just pop the top most element of the stack.
+Stack : |Empty| whenever we encounter any closing brace, we check if the top of the stack 
+contains the matching opening brace or not, if this is the case then instead of pushing,
+we just pop the top most element of the stack.
 
 Since the stack is empty, we return true (No parenthesis errors were found)
 ********************************************************************************
@@ -127,9 +128,9 @@ Stack : |'[', 8| we will only push the parenthesis into the stack
         |'(', 4|
 
 Tenth call :
-Stack : |')', 10| The incoming element is : ')' which is not a matching brace for our topmost element, hence we push s
-Stack : |'[', 8| element into the stack and break out of the loop, then we will simply return its index 
-        |'(', 4| 
+Stack : |')', 10| The incoming element is : ')' which is not a matching brace 
+Stack : |'[', 8| for our topmost element, hence we push element into the stack  
+        |'(', 4| and break out of the loop, then we will simply return its index
 
 Since the stack is not empty, we will check the topmost element of the stack, display its position and return false.
 ********************************************************************************
