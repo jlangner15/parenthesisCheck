@@ -32,11 +32,10 @@ def home():
 def string():
     #request gets the submission of the html form in templates/string.html
     if request.method == 'POST':
-        #get string from html form labeled as content in .html
-        string = request.form['content']
 
-        #creates new database item instance, assigning the column 'content' to the string passed
-        new_str = inputString(content=string)
+        string = request.form['content'] #get string from html form labeled as content in .html
+
+        new_str = inputString(content=string) #creates new database item instance, assigning the column 'content' to the string passed
 
         #try to add new database item instance to database
         try:
@@ -49,6 +48,7 @@ def string():
     #pass the most recent database entry row into templates/string.html file to be displayed
     else:
         string = inputString.query.order_by(inputString.id.desc()).limit(1)
+
         return render_template('string.html', string=string)
 
 @app.route('/file/')
