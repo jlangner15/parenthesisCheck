@@ -18,7 +18,7 @@ a unique ID to identify such string.
 class inputString(database.Model):
     id = database.Column(database.Integer, primary_key=True)
     content = database.Column(database.String(1000), nullable=False) #max string length is 1000 chars
-    isBalanced = database.Column(database.String(50), nullable=False) #outcome of brackets_validator(str)
+    isBalanced = database.Column(database.String(1000), nullable=False) #outcome of brackets_validator(str)
 
     def __repr__(self):
         return 'string %s' % self.id
