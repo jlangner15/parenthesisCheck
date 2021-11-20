@@ -22,7 +22,7 @@ Flowchart Diagram:
 
 
 ## Three Flaskateers:
-This is our first hackathon individually and as a group!  The three of us have different education backgrounds and come from different countries. The three of us have similar tech experience however but none of us have used Flask. 
+This is our first hackathon individually and as a group! The three of us have different education backgrounds and come from different countries. We all have similar tech experience however but none of us have used Flask before.
 
 
 ## Setting Up The Database Connection
