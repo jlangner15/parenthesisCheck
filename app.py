@@ -1,10 +1,15 @@
 from flask import Flask, request, render_template, redirect
 from flask_sqlalchemy import SQLAlchemy
-from Brackets_Validator import brackets_validator
+from Brackets_Validator import brackets_validator, brackets_validator_from_file
+from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
 #configure a database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///strings.db'
+app.config['UPLOAD_FOLDER'] = 'static/' #folder to save files
+app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024 #1MB max upload size
+app.config['UPLOAD_EXTENSIONS'] = ['.txt', '.py', '.doc', '.js', '.css', '.hmtl', '.php', '.java', '.c']
 
 #init the database
 database = SQLAlchemy(app)
@@ -61,7 +66,36 @@ def string():
 
 @app.route('/file/')
 def file():
-    return render_template('file.html')
+    return render_template('file.html',content="Please upload a file",filename="")
+
+
+@app.route('/display', methods=['GET', 'POST'])
+def display_file():
+    if request.method == 'POST':
+        f = request.files['file']
+        filename = secure_filename(f.filename)
+
+        if filename == '':
+            return render_template('file.html',content="Please upload a file")
+
+        filename_split = os.path.splitext(filename)[1]
+
+        if filename_split not in app.config['UPLOAD_EXTENSIONS']:
+            return render_template('file.html', content="Please upload the correct file type")
+
+        f.save(app.config['UPLOAD_FOLDER'] + filename)
+
+        file = open(app.config['UPLOAD_FOLDER'] + filename, "r")
+        content = file.read()
+
+        outcome = brackets_validator(str(content))
+
+        if outcome == -1:
+            boolResult = "True"
+        else:
+            boolResult = "False! Error at index: " + str(outcome)
+
+    return render_template('file.html', content=boolResult, filename=filename)
 
 
 if __name__ == '__main__':
