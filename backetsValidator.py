@@ -1,5 +1,4 @@
 from Stack import Stack
-#put bracket validator here
 
 def check_brackets_from_string(text):
     opening_brackets_stack = Stack()

@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, redirect
 from flask_sqlalchemy import SQLAlchemy
+from backetsValidator import check_brackets_from_string
 
 app = Flask(__name__)
 #configure a database
@@ -21,18 +22,23 @@ class inputString(database.Model):
     def __repr__(self):
         return 'string %s' % self.id
 
+
 @app.route('/')
-def hello_world():
-    #render_template() automatically searches within templates directory for html page
-    return render_template('index.html')
+def home():
+    #render_template() automatically loags corresponding .html file from /templates
+    return render_template('home.html')
 
 @app.route('/string/', methods=['POST', 'GET'])
 def string():
+    #request gets the submission of the html form in templates/string.html
     if request.method == 'POST':
-        #get string from html form
+        #get string from html form labeled as content in .html
         string = request.form['content']
+
+        #creates new database item instance, assigning the column 'content' to the string passed
         new_str = inputString(content=string)
 
+        #try to add new database item instance to database
         try:
             database.session.add(new_str)
             database.session.commit()
@@ -40,6 +46,7 @@ def string():
         except:
             return "Error handling string!"
 
+    #pass the most recent database entry row into templates/string.html file to be displayed
     else:
         string = inputString.query.order_by(inputString.id.desc()).limit(1)
         return render_template('string.html', string=string)

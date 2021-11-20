@@ -25,11 +25,11 @@
             <th>Balanced</th>
         <tr>
 
-    <!-- Python code must follow syntax { % python code here % } and contain a endblock seen below-->
+    <!-- Python code must follow syntax below and contain a endblock seen below-->
          {% for string in string %}
             <tr>
                 <td>{{  string.content }}</td>
-                <td>boolean representing return status of algorithm</td>
+                <td>{{ string.outcome }}</td>
             </tr>
         {% endfor %}
     </table>
