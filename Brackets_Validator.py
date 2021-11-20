@@ -40,6 +40,10 @@ def brackets_validator_from_file(file_name):
     position = 0
 
     with open(file_name) as file:
+        print("Reading File : {}:", file_name)
+        file.read()
+        file.seek(0)
+
         while(true):
             position += 1
             ch = file.read(1)

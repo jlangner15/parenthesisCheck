@@ -1,17 +1,23 @@
-body {
-    margin: 10px;
-    font-family: sans-serif;
-    background-color: white;
+body
+{
+    background-color: #FFE652;
+    font-family: monospace;
+    text-align: center;
+    font-size: 3em;
+    color: #0b7783;
 }
 
-h1.header {
-    font-weight: bolder;
-    color: #9C1A1C;
-    text-align: center;
+button
+{
+    background-color: #C2FFF9;
+    padding: 2%;
+    margin: 5%;
 }
-ul.menu{
-    border: 2px #444444;
-}
-a{
-    font-size: 15px;
+
+a
+{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 550;
+    font-family: monospace;
 }
