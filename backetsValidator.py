@@ -1,30 +1,32 @@
 from Stack import Stack
+from Brackets import Brackets
 
-def check_brackets_from_string(text):
-    opening_brackets_stack = Stack()
+def brackets_validator(str):
+    flag = True
+    opening_bracket_stack = Stack()
 
-    for char in text:
+    position = 0
+    for ch in str:
+        position = position + 1
+        if (ch == '(' or ch == '[' or ch == '{'):
+            temp = Brackets(ch, position)
+            opening_bracket_stack.push(temp)
 
-        if char in ['(','[','{']:
-            opening_brackets_stack.push(char)
-        elif char not in [')','}',']']:
-            pass
-        else:
-            if opening_brackets_stack.size() > 0:
+        if (ch == ')' or ch == ']' or ch == '}'):
+            if opening_bracket_stack.empty():
+                flag = False
+                temp = Brackets(ch, position)
+                opening_bracket_stack.push(temp)
+                break
+            elif (not opening_bracket_stack.top().Match(ch)):
+                flag = False
+                temp = Brackets(ch, position)
+                opening_bracket_stack.push(temp)
+                break
+            else :
+                opening_bracket_stack.pop()
 
-                peek = opening_brackets_stack.peek()
-                opening_brackets_stack.pop()
-
-                if peek == '(' and char != ')':
-                    return False
-                if peek == '{' and char != '}':
-                    return False
-                if peek == '[' and char != ']':
-                    return False
-            else:
-                return False
-
-    if opening_brackets_stack.empty():
-        return True
-
-    return False
+    if (opening_bracket_stack.empty() and flag):
+        print("Success")
+    else :
+        print(opening_bracket_stack.top().posi)

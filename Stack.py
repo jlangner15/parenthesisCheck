@@ -13,7 +13,7 @@ class Stack:
         if len(self.stack) != 0:
             self.stack.pop()
 
-    def peek(self):
+    def top(self):
         return self.stack[-1]
 
     def empty(self):
