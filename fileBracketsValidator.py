@@ -1,15 +1,19 @@
 from Stack import Stack
 
-
+'''
+Returns -1 if True
+else it wil return the index of the character where it failed
+'''
 def checkFile(input):
     f = open(input, 'r')
 
-    outStr = ""
-
     opening_brackets_stack = Stack()
+
+    index = 0 #count chars in the string to return failure index
 
     for line in f:
         for char in line:
+            index += 1
             if char in ['(', '[', '{']:
                 opening_brackets_stack.push(char)
             elif char not in [')', '}', ']']:
@@ -21,17 +25,17 @@ def checkFile(input):
                     opening_brackets_stack.pop()
 
                     if peek == '(' and char != ')':
-                        return False
+                        return index
                     if peek == '{' and char != '}':
-                        return False
+                        return index
                     if peek == '[' and char != ']':
-                        return False
+                        return index
                 else:
-                    return False
+                    return index
 
     f.close()
 
     if opening_brackets_stack.empty():
-        return True
+        return -1
 
-    return False
+    return index
