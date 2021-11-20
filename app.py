@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, redirect
 from flask_sqlalchemy import SQLAlchemy
-from Brackets_Validator import check_brackets_from_string
+from Brackets_Validator import brackets_validator
 
 app = Flask(__name__)
 #configure a database
