@@ -156,7 +156,7 @@ We have used varibale arguements method, so the user is not just limited to a si
 
 <br>
 
-Our web application is built utilizing the Flask web framework. The homepage will contain two options to pass different input types, either as a file of supported kind(See below) or as a string. Each option will direct you to another page where the process will take place. Upon completion, you will be redirected to the home page and prompted to repeat the process.
+Our web application is built utilizing the Flask web framework. The homepage will contain two options to pass different input types, either as a file of supported kind (See below) or as a string. Each option will direct you to another page where the process will take place. Upon completion, you will be redirected to the home page and prompted to repeat the process.
 
 <br>
 
@@ -168,11 +168,11 @@ Flowchart Diagram:
 
 <br>
 
-## **Four Flaskateers**
+## **Three Flaskateers**
 
 <br>
 
-This is our first hackathon individually and as a group!  The three of us have different education backgrounds and come from different countries. The three of us have similar tech experience however but none of us have used Flask.
+This is our first hackathon individually and as a group!  The three of us have different educational backgrounds and come from different countries. All of us have similar tech experience however but none of us have used Flask before. It's a first for all of us.
 
 <br>
 
