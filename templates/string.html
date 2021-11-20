@@ -7,29 +7,35 @@
 </head>
 
 {% block body %}
+
 <body>
-    <h1>String Input Balanced Parenthesis Check</h1>
-    <a>This page will allow user to input a string and check for balanced parenthesis</a>
+    <h1>Parenthesis Check for String Input</h1>
+    <a>This page will allow user to input a string and check for balanced parenthesis.</a>
     <br>
+    <a>Enter string below.</a>
     <form method="POST">
         <input name="content" id="content" type="text">
         <input type="submit" value="check">
     </form>
     <br>
+
     <table >
         <tr>
             <th>String</th>
             <th>Balanced</th>
+            <th></th>
         <tr>
 
     <!-- Python code must follow syntax { % python code here % } and contain a endblock seen below-->
-    {% for string in string %}
-        <tr>
-            <td>{{  string.content }}</td>
-            <td>boolean representing return status of algorithm</td>
-        </tr>
-    {% endfor %}
+         {% for string in string %}
+            <tr>
+                <td>{{  string.content }}</td>
+                <td>boolean representing return status of algorithm</td>
+            </tr>
+        {% endfor %}
     </table>
+
 </body>
+
 {% endblock %}
 </html>

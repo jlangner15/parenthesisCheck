@@ -19,8 +19,7 @@ class inputString(database.Model):
     content = database.Column(database.String(1000), nullable=False) #max string length is 1000 chars
 
     def __repr__(self):
-        return 'String %r' % self.id
-
+        return 'string %s' % self.id
 
 @app.route('/')
 def hello_world():
@@ -42,12 +41,13 @@ def string():
             return "Error handling string!"
 
     else:
-        string = inputString.query.order_by(inputString.id).all()
+        string = inputString.query.order_by(inputString.id.desc()).limit(1)
         return render_template('string.html', string=string)
 
 @app.route('/file/')
 def file():
     return render_template('file.html')
+
 
 if __name__ == '__main__':
     app.run()
