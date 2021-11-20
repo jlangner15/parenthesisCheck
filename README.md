@@ -54,7 +54,8 @@ First call :
 Stack : |'[', 1| pushed '[' into the stack
 
 Second call :
-Stack : |Empty| whenever we encounter any closing brace, we check if the top of the stack contains the matching opening brace or not, if this is the case then instead of pushing, we just pop the top most element of the stack.
+Stack : |Empty| whenever we encounter any closing brace, we check if the top of the stack contains the matching
+opening brace or not, if this is the case then instead of pushing, we just pop the top most element of the stack.
 
 Since the stack is empty, we return true (No parenthesis errors were found)
 ********************************************************************************
