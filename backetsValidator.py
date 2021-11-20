@@ -5,10 +5,11 @@ def check_brackets_from_string(text):
 
     for char in text:
 
-        if char == '(' or char == '[' or char == '{':
+        if char in ['(','[','{']:
             opening_brackets_stack.push(char)
+        elif char not in [')','}',']']:
+            pass
         else:
-
             if opening_brackets_stack.size() > 0:
 
                 peek = opening_brackets_stack.peek()
