@@ -40,10 +40,10 @@ def brackets_validator_from_file(file_name):
     position = 0
 
     with open(file_name) as file:
-        while(true):
+        while(True):
             position += 1
             ch = file.read(1)
-            if not char:
+            if not ch:
                 break
 
             if (ch == '(' or ch == '[' or ch == '{'):
