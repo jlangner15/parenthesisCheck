@@ -66,29 +66,33 @@ def string():
 
 @app.route('/file/')
 def file():
+    #pass in blank file and suggest upload
     return render_template('file.html',content="Please upload a file",filename="")
 
 
 @app.route('/display', methods=['GET', 'POST'])
 def display_file():
     if request.method == 'POST':
-        f = request.files['file']
-        filename = secure_filename(f.filename)
+        f = request.files['file'] #get the file from request input
+        filename = secure_filename(f.filename) #this removes any unecssary direcotry parenthesis
 
+        #filename os '' when used tries to submit with no file
         if filename == '':
             return render_template('file.html',content="Please upload a file")
 
         filename_split = os.path.splitext(filename)[1]
 
+        #check that the file is a supported extension
         if filename_split not in app.config['UPLOAD_EXTENSIONS']:
             return render_template('file.html', content="Please upload the correct file type")
 
+        #save the file for the application to read
         f.save(app.config['UPLOAD_FOLDER'] + filename)
 
         file = open(app.config['UPLOAD_FOLDER'] + filename, "r")
         content = file.read()
 
-        outcome = brackets_validator(str(content))
+        outcome = brackets_validator(str(content)) #check bracked validator for the file content
 
         if outcome == -1:
             boolResult = "True"
