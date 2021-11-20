@@ -1,4 +1,17 @@
 body {
-    margin: 0;
+    margin: 10px;
     font-family: sans-serif;
+    background-color: white;
+}
+
+h1.header {
+    font-weight: bolder;
+    color: #9C1A1C;
+    text-align: center;
+}
+ul.menu{
+    border: 2px #444444;
+}
+a{
+    font-size: 15px;
 }
