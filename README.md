@@ -1,4 +1,4 @@
-# parenthesisCheck
+# ParenthesisValidator
 
 ## Back to Hacking 2021 run by Major League Hacking
 November 19-21, 2021
@@ -21,7 +21,7 @@ Flowchart Diagram:
 ![flowDiagram](https://user-images.githubusercontent.com/69116925/142677966-73f80633-da5e-411a-8007-4d5a59e0a1c1.png)
 
 
-## Three Flaskateers:
+## Four Flaskateers:
 This is our first hackathon individually and as a group!  The three of us have different education backgrounds and come from different countries. The three of us have similar tech experience however but none of us have used Flask. 
 
 
