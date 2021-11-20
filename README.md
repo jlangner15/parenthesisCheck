@@ -45,7 +45,7 @@ Our Algorithm works in the following manner
 
 ```txt
 We will be pushing a pair into our stack : pair <element, position>
-******************************************************************************************************************
+********************************************************************************
 Example 1 :
 String : []
 Our Algo will implement the stack as :
@@ -57,7 +57,7 @@ Second call :
 Stack : |Empty| whenever we encounter any closing brace, we check if the top of the stack contains the matching opening brace or not, if this is the case then instead of pushing, we just pop the top most element of the stack.
 
 Since the stack is empty, we return true (No parenthesis errors were found)
-******************************************************************************************************************
+********************************************************************************
 Example 2 :
 String : {}[]
 
@@ -74,7 +74,7 @@ Fourth call :
 Stack : |Empty| popped '[' out of the stack because the matching closing brace was encountered
 
 Since the stack is empty, we return true (No parenthesis errors were found)
-******************************************************************************************************************
+********************************************************************************
 Example 3 :
 String : [()]
 
@@ -92,7 +92,7 @@ Fourth call :
 Stack : |Empty| popped '[' out of the stack because the matching closing brace was encountered
 
 Since the stack is empty, we return true (No parenthesis errors were found)
-******************************************************************************************************************
+********************************************************************************
 Example 4 :
 String : foo(bar[i);
 
@@ -131,7 +131,7 @@ Stack : |'[', 8| element into the stack and break out of the loop, then we will 
         |'(', 4| 
 
 Since the stack is not empty, we will check the topmost element of the stack, display its position and return false.
-******************************************************************************************************************
+********************************************************************************
 ```
 
 ### **For Files**
