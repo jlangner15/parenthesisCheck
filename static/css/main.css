@@ -1,67 +1,139 @@
-body
+*
 {
-    background-color: #eee6b1;
-    font-family: monospace;
-    text-align: center;
-    font-size: 3em;
-    color: #0b7783;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 
+html
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 90.5%;
+    box-sizing: border-box;
+ }
 
-button{
-    background-color: #ffffff; /* Green */
-    border: 3px solid #0b7783;
-    border-radius: 4px;
-    padding: 15px 32px;
+body
+{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    height: 100vh;
+    position: relative;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.4s;
+    background: linear-gradient(to left, #ffa052, #fd6933);
+}
+
+h1
+{
+    margin-top: 3%;
+    font-size: 4.5rem;
+    color: rgb(254, 255, 208);
+    margin-bottom: 2rem;
+}
+
+p
+{
+    font-size: 2.2rem;
 }
 
 a
 {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 550;
-    font-family: monospace;
-}
-
-ul.supportedTypes{
-    text-align-all: left;
-    font-size: 20px;
-}
-
-input[type=file]{
-  border: 3px solid #0b7783;
-    border-radius: 4px;
-    background-color: white;
-    width: 60%;
-    height: 30px;
-    padding: 4px 2px;
     font-size: 24px;
 }
 
-input[type=text] {
-    border: 3px solid #0b7783;
-    border-radius: 4px;
-    background-color: white;
-    transition: width 0.4s ease-in-out;
-    width: 60%;
-    height: 30px;
-    padding: 4px 2px;
+a.heading
+{
+    color: rgb(254, 255, 208);
+    text-decoration: none;
     font-size: 24px;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: #0b7783;
-    font-size: 24px;
-  border: white;
-  border-radius: 4px;
-  color: white;
-  padding: 16px 16px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+button a
+{
+    color: #333;
+}
+
+input[type = text]
+{
+    padding: 1%;
+    margin-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(248, 243, 199);
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 15px;
+}
+
+input[type = file]
+{
+    padding: 1%;
+    margin-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(248, 243, 199);
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 15px;
+}
+
+input[type = submit]
+{
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2%;
+    color: #333;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(248, 243, 199);
+    border: 1px solid black;
+    border-radius: 15px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    border-bottom: 2px solid black;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background: linear-gradient(to top left, #31220f, #6A492B);
+}
+
+.element
+{
+    font-size: x-large;
+    margin: auto;
+}
+
+.box
+{
+    width: 65%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 1%;
+    background: linear-gradient(to top left, #ff9f51, #ffd49b);
+    margin-bottom: 2%;
+    box-shadow: 10px 5px 5px rgb(71, 71, 71);
+}
+
+.input_btn
+{
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 1%;
+    margin: 3%;
+    background: linear-gradient(to top left, #ffffff, #f59338);
+    box-shadow: 10px 5px 5px rgb(71, 71, 71);
+}
+
+.input_btn :hover
+{
+    color: black;
 }

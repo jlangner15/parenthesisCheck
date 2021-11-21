@@ -2,23 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Parenthesis Validator</title>
     <link rel="stylesheet" href="../static/css/main.css">
-    <title>File Input</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    {% block head %}{% endblock %}
+
 </head>
+
+{% block body %}
+
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="element">
+                <a class="heading" href="/">Home</a>
+            </div>
+            <div>
+                <h1>
+                    Parenthesis Validator for Strings
+                </h1>
+            </div>
+            <div class="element">
+                <a class="heading" href="About Us">About Us</a>
+            </div>
+        </nav>
+    </header>
 
-    <h1>File Input Balanced Parenthesis Check</h1>
-    <section>
-    <h3>This page will allow user to upload a file and check for balanced parenthesis</h3>
-    <h6>Supported file types include</h6>
-        <p>.txt .py .doc .js .html .java .php .c</p>
-    </section>
+    <section class="box">
+        <p>
+            Select any .cpp, .c, .py, .json, .txt, .html, .css, .js, Dockerfile, .yaml File
+        </p>
+        <br>
+        <form action="/display" method = "POST" enctype = "multipart/form-data" class="user_input">
+            <input type="file" name="file" placeholder="Select The File You Want To Check">
+            <br>
+            <input type="submit" value="Upload">
+        </form>
 
-    <form action="/display" method = "POST" enctype = "multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
-    {% if filename != "" %}
+        {% if filename != "" %}
         <a>Filename: {{ filename }}</a>
     {% endif %}
 
@@ -29,7 +53,9 @@
         <a>{{ content }}</a>
     {% endif %}
 
-    <br>
-    <button> <a href="{{ url_for('home') }}">Home</a></button>
+    </section>
 </body>
+
+{% endblock %}
+
 </html>
