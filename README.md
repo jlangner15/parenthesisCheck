@@ -2,9 +2,9 @@
 
 <br>
 
-A Parenthesis Validator App is a must have app while working with programming languages, we never really know if the
-file have all the Parenthesis Balanced or not, only way is we can just pass those files or strings through our Web
-App, and sit back and relax, it will do the job for you.
+A Parenthesis Validator App is a must have app while working with programming languages. We never really know if the
+file have all the Parenthesis Balanced or not. Only way is we can just pass those files or strings through our Web
+App, and sit back and relax; it will do the job for you.
 
 <br>
 
@@ -18,7 +18,7 @@ November 19-21, 2021
 
 <br>
 
-This is our first hackathon individually and as a group!  The three of us have different educational backgrounds and come from different countries. All of us have similar tech experience however but none of us have used Flask before. It's a first for all of us.
+This is our first hackathon individually and as a group! The three of us have different educational backgrounds and come from different countries. All of us have similar tech experience however but none of us have used Flask before. It's a first for all of us.
 
 <br>
 
@@ -28,7 +28,7 @@ This is our first hackathon individually and as a group!  The three of us have d
 
 - Implement a web application that takes user input and returns the validity of having balanced parenthesis.
 - Our App would be able to work for as many number of files and string inputs as the user wants just one at a time.
-- Our App would check for the following parenthesis pairs : [], {}, and () while omitting otehr characters
+- Our App would check for the following parenthesis pairs : [], {}, and () while omitting otehr characters.
 
 <br>
 
@@ -45,7 +45,7 @@ Balanced parenthesis is a common programming problem that checks whether or not 
 
 <br>
 
-The algorithm utilizes a stack data structure. This is a data structure that follows a First In Last Out principle. As we search through the input, upon every occurrence of an open parenthesis '(' we add it to the stack. When we encounter a closed parenthesis ')' we check that the top of the stack contains a '('. If so, we Pop it off the stack i.e remove it and continue. If we encounter another type of opening or an empty stack with a closing parenthesis then we return false as it isn't nested properly.If we search the entire string and our stack still has elements return False. If we search the entire input and our stack is empty then we can return True.
+The algorithm utilizes a stack data structure that follows a First In Last Out principle. As we search through the input, upon every occurrence of an open parenthesis '(' we add it to the stack. When we encounter a closed parenthesis ')' we check that the top of the stack contains a '('. If so, we Pop it off the stack i.e remove it and continue. If we encounter another type of opening or an empty stack with a closing parenthesis then we return false as it isn't nested properly. If we search the entire string and our stack still has elements return False. If we search the entire input and our stack is empty then we can return True.
 
 <br>
 
@@ -178,7 +178,7 @@ Flowchart Diagram:
 - Python
 - Flask
 - SQLAlchemly
-- HMTL
+- HTML
 - CSS
 
 ## **Input Constraints**
