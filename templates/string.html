@@ -2,33 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>String Input</title>
-    <link rel="stylesheet" href="../static/css/main.css">n
+    <title>Parenthesis Validator</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
     {% block head %}{% endblock %}
+    
 </head>
 
 {% block body %}
 
 <body>
-    <h1>Parenthesis Validator for String Input</h1>
-    <a>This page will allow user to input a string and check for balanced parenthesis.</a>
-    <br>
-    <a>Enter string below.</a>
-    <form method="POST">
-        <input name="content" id="content" type="text">
-        <input type="submit" value="check">
-    </form>
-    <br>
+    <header>
+        <nav class="navbar">
+            <div class="element">
+                <a href="Home">Home</a>
+            </div>
+            <div>
+                <h1>
+                    Parenthesis Validator for Strings
+                </h1>
+            </div>
+            <div class="element">
+                <a href="About Us">About Us</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="box">
+        <p>
+            Enter String Below
+        </p>
+        <br>
+        <form method="POST" class="user_input">
+            <input name="content" id="content" type="text" placeholder="Enter The String Here">
+            <br>
+            <input type="submit" value="check">
+        </form>
+        <br>
+        
+        {% for string in string %}
+        <p>
+            String is : {{ string.content }}
+        </p>
+        <br>
+        <p>
+            Balance : {{ string.isBalanced }}
+        </p>
+        {% endfor %}
+    </section>
+</body>
 
-    {% for string in string %}
+{% endblock %}
+
+</html>
+
+<!--
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>String Input</title>
+        <link rel="stylesheet" href="../static/css/main.css">n
+        {% block head %}{% endblock %}
+    </head>
+    
+    {% block body %}
+    
+    <body>
+        <h1>Parenthesis Validator for String Input</h1>
+        <a>This page will allow user to input a string and check for balanced parenthesis.</a>
+        <br>
+        <a>Enter string below.</a>
+        <form method="POST">
+            <input name="content" id="content" type="text">
+            <input type="submit" value="check">
+        </form>
+        <br>
+        
+        {% for string in string %}
         <a>String :</a>
         <a>{{ string.content }}</a>
         <br>
         <Outcome>Balanced :</Outcome>
         <a>{{ string.isBalanced }}</a>
-    {% endfor %}
-
-</body>
-
-{% endblock %}
-</html>
+        {% endfor %}
+        
+    </body>
+    
+    {% endblock %}
+    </html>
+-->
