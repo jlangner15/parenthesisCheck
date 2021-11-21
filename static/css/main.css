@@ -7,18 +7,19 @@
   
 html
 {
+    font-family: 'Roboto', sans-serif;
     font-size: 90.5%;
     box-sizing: border-box;
  }
   
 body 
 {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     height: 100vh;
     position: relative;
     text-align: center;
-    background: linear-gradient(to top left, #fd642c, #f3a155);
+    background: linear-gradient(to top left, #fa7f53, #f7af6c);
 }
   
 h1
@@ -48,7 +49,7 @@ a
     border-bottom: 2px solid black;
     margin-bottom: 5%;
     border-radius: 10px;
-    background: linear-gradient(to top left, #2F2519, #352d25);
+    background: linear-gradient(to top left, #31220f, #6A492B);
 }
 
 .element
@@ -81,7 +82,6 @@ a
 .input_btn :hover
 {
     color: black;
-    
 }
 
 button a
