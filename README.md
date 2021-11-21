@@ -181,6 +181,9 @@ Flowchart Diagram:
 - HMTL
 - CSS
 
+## **Input Constraints**
+- File: Must be less than 1MB
+- String: Must be less than 1000 characters
 
 ## **Setting up virtual environment**
 1. Open terminal or command prompt
