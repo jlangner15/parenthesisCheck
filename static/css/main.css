@@ -1,23 +1,89 @@
-body
+*
 {
-    background-color: #FFE652;
-    font-family: monospace;
-    text-align: center;
-    font-size: 3em;
-    color: #0b7783;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
-
-button
+  
+html
 {
-    background-color: #C2FFF9;
-    padding: 2%;
-    margin: 5%;
+    font-size: 90.5%;
+    box-sizing: border-box;
+ }
+  
+body 
+{
+    font-family: sans-serif;
+    color: #333;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to top left, #fd642c, #f3a155);
+}
+  
+h1
+{
+    margin-top: 3%;
+    font-size: 4.5rem;
+    color: rgb(254, 255, 208);
+    margin-bottom: 2rem;
+}
+  
+p
+{
+    font-size: 2.2rem;
 }
 
 a
 {
+    color: rgb(254, 255, 208);
     text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 550;
-    font-family: monospace;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    border-bottom: 2px solid black;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background: linear-gradient(to top left, #2F2519, #352d25);
+
+}
+
+.element
+{
+    font-size: x-large;
+    margin: auto;
+}
+
+.box
+{
+    width: 65%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 1%;
+    background: linear-gradient(to top left, #ffffff, #f59338);
+    margin-bottom: 2%;
+}
+
+.input_btn
+{
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 1%;
+    margin: 3%;
+    border: 1px dashed #333;
+    background: linear-gradient(to top left, #ffffff, #f59338);
+}
+
+.input_btn :hover
+{
+    color: black;
+}
+
+button a
+{
+    color: #333;
 }

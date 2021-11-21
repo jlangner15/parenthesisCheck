@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Parenthesis Validator</title>
-    <link rel="stylesheet" href="../static/css/main.css">
+  <meta charset="UTF-8">
+  <title>Parenthesis Validator</title>
+  <link rel="stylesheet" href="../static/css/main.css">
 </head>
 <body>
-    <header>
-      <h1>
-        Parenthesis Validator
-      </h1>
-      <p>
-        This is free to use online app for checking all types of text files for Parenthesis Balance. 
-        We are a team of 3 people from 3 different countries, we are currently working on improving this app and public access.
-      </p>
-      <section>
-        <button><a href="{{ url_for('string') }}">Check For A String</a></button>
-        <button><a href="{{ url_for('file') }}">Check For A File</a></button>
-      </section>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="element">
+        <a href="Home">Home</a>
+      </div>
+      <div>
+        <h1>
+          Parenthesis Validator
+        </h1>
+      </div>
+      <div class="element">
+        <a href="About Us">About Us</a>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="user_input">
+    <p class="box">
+      This is free to use online app for checking all types of text files for Parenthesis Balance. 
+      We are a team of 3 people from 3 different countries, we are currently working on improving this app and public access.
+    </p>
+    <button class="input_btn"><a href="{{ url_for('string') }}">Check For A String</a></button>
+    <button class="input_btn"><a href="{{ url_for('file') }}">Check For A File</a></button>
+  </section>
 </body>
 </html>
-
-<!--
-    <strong><nav>
-              <ul class="menu">
-                <ul><a href="{{ url_for('string') }}">String Check</a></ul>
-                <ul><a href="{{ url_for('file') }}">File Check</a></ul>
-              </ul>
-            </nav></strong>
--->
