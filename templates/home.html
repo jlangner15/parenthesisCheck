@@ -12,7 +12,7 @@
   <header>
     <nav class="navbar">
       <div class="element">
-        <a class="heading" href="/">Home</a>
+        <a target="_blank" class="heading" href="/">Home</a>
       </div>
       <div>
         <h1>
@@ -20,18 +20,25 @@
         </h1>
       </div>
       <div class="element">
-        <a class="heading" href="About Us">About Us</a>
+        <a target="_blank" class="heading" href="/">About Us</a>
       </div>
     </nav>
   </header>
-
+  
   <section>
-    <p class="box">
-      This is free to use online app for checking all types of text files for Parenthesis Balance.
-      We are a team of 3 people from 3 different countries, we are currently working on improving this app and public access.
-    </p>
-    <button class="input_btn"><a href="{{ url_for('string') }}">Check For A String</a></button>
-    <button class="input_btn"><a href="{{ url_for('file') }}">Check For A File</a></button>
+    <button class="input_btn"><a target="_blank" href="{{ url_for('string') }}">Check For A String</a></button>
+    <button class="input_btn"><a target="_blank" href="{{ url_for('file') }}">Check For A File</a></button>
   </section>
+
+  <footer>
+    <p>
+      Made With Love &#128151; By
+    </p>
+    <div class="footer_profiles">
+      <a href="https://github.com/jlangner15" target="_blank">Jeremy Langner 	&#128515;</a>
+      <a href="https://github.com/Rudy-Raven" target="_blank">Rudmila Rudaba Islam &#128512;</a>
+      <a href="https://github.com/VaibhavMalik4187" target="_blank">Vaibhav Malik &#128512;</a>
+    </div>
+  </footer>
 </body>
 </html>

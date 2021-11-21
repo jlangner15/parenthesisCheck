@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+    
     {% block head %}{% endblock %}
-
+    
 </head>
 
 {% block body %}
@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar">
             <div class="element">
-                <a class="heading" href="/">Home</a>
+                <a class="heading" href="/" target="_blank">Home</a>
             </div>
             <div>
                 <h1>
@@ -26,11 +26,11 @@
                 </h1>
             </div>
             <div class="element">
-                <a class="heading" href="About Us">About Us</a>
+                <a class="heading" href="/" target="_blank">About Us</a>
             </div>
         </nav>
     </header>
-
+    
     <section class="box">
         <p>
             Enter String Below
@@ -42,7 +42,7 @@
             <input type="submit" value="check">
         </form>
         <br>
-
+        
         {% for string in string %}
         <p>
             String is : {{ string.content }}
@@ -53,6 +53,17 @@
         </p>
         {% endfor %}
     </section>
+    
+    <footer>
+        <p>
+            Made With Love &#128151; By
+        </p>
+        <div class="footer_profiles">
+            <a href="https://github.com/jlangner15" target="blank">Jeremy Langner 	&#128515;</a>
+            <a href="https://github.com/Rudy-Raven" target="_blank">Rudmila Rudaba Islam &#128512;</a>
+            <a href="https://github.com/VaibhavMalik4187" target="_blank">Vaibhav Malik &#128512;</a>
+        </div>
+    </footer>
 </body>
 
 {% endblock %}

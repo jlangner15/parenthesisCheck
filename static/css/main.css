@@ -19,14 +19,14 @@ body
     height: 100vh;
     position: relative;
     text-align: center;
-    background: linear-gradient(to left, #ffa052, #fd6933);
+    background: linear-gradient(to left, #fcb175, #fd885e);
 }
 
 h1
 {
     margin-top: 3%;
     font-size: 4.5rem;
-    color: rgb(254, 255, 208);
+    color: black;
     margin-bottom: 2rem;
 }
 
@@ -44,7 +44,7 @@ a
 
 a.heading
 {
-    color: rgb(254, 255, 208);
+    
     text-decoration: none;
     font-size: 24px;
 }
@@ -61,7 +61,7 @@ input[type = text]
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: larger;
-    background-color: rgb(248, 243, 199);
+    background-color: white;
     border: 1px solid black;
     width: 100%;
     border-radius: 15px;
@@ -74,7 +74,7 @@ input[type = file]
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: larger;
-    background-color: rgb(248, 243, 199);
+    background-color: white;
     border: 1px solid black;
     width: 100%;
     border-radius: 15px;
@@ -85,14 +85,23 @@ input[type = submit]
     padding: 1%;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 2%;
-    color: #333;
+    color: white;
     text-align: center;
     font-size: large;
-    background-color: rgb(248, 243, 199);
+    background-color: rgb(62, 139, 175);
     border: 1px solid black;
     border-radius: 15px;
     width: fit-content;
     cursor: pointer;
+}
+
+footer
+{
+    position: absolute;
+    margin-top: 2%;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgb(255, 238, 192);
 }
 
 .navbar
@@ -100,10 +109,8 @@ input[type = submit]
     display: flex;
     align-items: center;
     justify-content: stretch;
-    border-bottom: 2px solid black;
-    margin-bottom: 5%;
-    border-radius: 10px;
-    background: linear-gradient(to top left, #31220f, #6A492B);
+    margin-bottom: 2%;
+    background-color: rgb(255, 238, 192);
 }
 
 .element
@@ -112,28 +119,66 @@ input[type = submit]
     margin: auto;
 }
 
+.element :hover
+{
+    background-color: #fdd58b;
+    font-size: 105%;
+    border-radius: 10px;
+}
+
 .box
 {
     width: 65%;
     margin: auto;
     border-radius: 30px;
     padding: 1%;
-    background: linear-gradient(to top left, #ff9f51, #ffd49b);
+    background-color: rgb(255, 238, 192);
     margin-bottom: 2%;
     box-shadow: 10px 5px 5px rgb(71, 71, 71);
 }
 
 .input_btn
 {
+    position: relative;
     border-radius: 20px;
     font-size: 1.5rem;
     padding: 1%;
     margin: 3%;
-    background: linear-gradient(to top left, #ffffff, #f59338);
+    background-color: rgb(255, 238, 192);
     box-shadow: 10px 5px 5px rgb(71, 71, 71);
 }
 
 .input_btn :hover
 {
+    font-weight: 500;
+    background-color: #fdd58b;
+    border-radius: 10px;
     color: black;
+}
+
+.element :hover
+{
+    font-weight: 500;
+    background-color: #fdd58b;
+    border-radius: 10px;
+}
+
+.footer_profiles
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer_profiles a
+{
+    font-size: 1.2em;
+    margin-top : 0.5%;
+}
+
+.footer_profiles :hover
+{
+    font-weight: 500;
+    background-color: #fdd58b;
+    border-radius: 10px;
 }

@@ -190,9 +190,9 @@ Flowchart Diagram:
 1. Open terminal or command prompt
 2. run `pip install virtualenv`
 3. Change directory to parenthesisCheck
-4. run `py-3 -m venv <name of environment>` where <> is a name you choose
+4. run `py -3 -m venv <name of environment>` where <> is a name you choose
 5. To activate on Mac OS / Linux run `source mypython/bin/activate`
-6. To activate on Windows run `mypthon\Scripts\activate`
+6. To activate on Windows run `<name of environment>\Scripts\activate`
 7. Virtual environment is now set up
 
 ## **Setting Up The Database Connection**
