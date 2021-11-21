@@ -28,7 +28,7 @@ This is our first hackathon individually and as a group! The three of us have di
 
 - Implement a web application that takes user input and returns the validity of having balanced parenthesis.
 - Our App would be able to work for as many number of files and string inputs as the user wants just one at a time.
-- Our App would check for the following parenthesis pairs : [], {}, and () while omitting otehr characters.
+- Our App would check for the following parenthesis pairs : [], {}, and () while omitting other characters.
 
 <br>
 
