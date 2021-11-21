@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///strings.db'
 app.config['UPLOAD_FOLDER'] = 'static/' #folder to save files
 app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024 #1MB max upload size
-app.config['UPLOAD_EXTENSIONS'] = ['.txt', '.py', '.doc', '.js', '.css', '.hmtl', '.php', '.java', '.c']
+app.config['UPLOAD_EXTENSIONS'] = ['.txt', '.py', '.doc', '.js', '.css', '.html', '.php', '.java', '.c'] #supported file extensions
 
 #init the database
 database = SQLAlchemy(app)
