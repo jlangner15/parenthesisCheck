@@ -33,7 +33,7 @@
     
     <section class="box">
         <p>
-            Enter String Below
+            Select any .cpp, .c, .py, .json, .txt, .html, .css, .js, Dockerfile, .yaml File
         </p>
         <br>
         <form action="/success" method = "POST" enctype = "multipart/form-data" class="user_input">
@@ -41,16 +41,6 @@
             <br>
             <input type="submit" value="Upload">
         </form>
-        <br>
-        
-        {% for string in string %}
-        <p>
-            String is : {{ string.content }}
-        </p>
-        <br>
-        <p>
-            Balance : {{ string.isBalanced }}
-        </p>
         {% endfor %}
     </section>
 </body>
