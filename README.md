@@ -49,7 +49,7 @@ The algorithm utilizes a stack data structure that follows a First In Last Out p
 
 <br>
 
-Our Algorithm works in the following visual manner
+Our Algorithm works in the following visual manner:
 
 <br>
 
@@ -154,7 +154,8 @@ Since the stack is not empty, we will check the topmost element of the stack, di
 
 <br>
 
-Currently the program is limited to a single file at a time. If we wanted to read multiple files we would have use a variable arguments method, so the user is not just limited to a single file, but user can upload as many files as he/she wants. The updated algorithm will scan each file for errors and print the results. For files our algo opens the files in read mode and then create a stack, and starts reading one character at a time from the input file until the EOF is encountered, and what is does is : it push uses the same string based algo but on each character of the file, maintains the stack the same way, and print the results.
+Currently, the program is limited to a single file at a time. If we wanted to read multiple files we would have used a variable arguments method, so the user is not just limited to a single file, but the user can upload as many files as he/she wants. The updated algorithm will scan each file for errors and print the results. For files, our algorithm opens the files in read mode and then create a stack, and starts reading one character at a time from the input file until the EOF is encountered, and what it does is: it push uses the same string-based algorithm but on each character of the file, maintains the stack the same way, and print the results.
+
 
 <br>
 
