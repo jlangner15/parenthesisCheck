@@ -12,7 +12,8 @@ App, and sit back and relax; it will do the job for you.
 
 <br>
 
-November 19-21, 2021
+November 19-21, 2021 \
+Devpost Submission: [Parenthesis Validator](https://devpost.com/software/parenthesis-validator)
 
 ## **Three Flaskateers**
 
